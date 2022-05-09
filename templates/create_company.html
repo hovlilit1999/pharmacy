@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Create Company
+{% endblock %}
+{% block body %}
+<div class="container">
+    <h1>Create company page</h1>
+    <form method="post">
+        <input type="text" name="company_name" id="company_name" class="form-control" placeholder="Insert Company Name"><br>
+        <input type="text" name="company_country" id="company_country" class="form-control" placeholder="Insert Country"><br>
+        <textarea name="description" id="description" class="form-control" placeholder="Shortly describe the activities of the company"></textarea><br>
+        <input type="submit" class="btn btn-success" value="Create">
+    </form>
+</div>
+{% endblock %}

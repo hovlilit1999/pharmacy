@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ my_company.comp_name }}
+
+{% endblock %}
+{% block body %}
+<div class="container">
+    <h1>{{ my_company.comp_name }} Company details</h1>
+    <div class="alert alert-info">
+        <h3>{{ my_company.comp_name }}</h3>
+        <h3>{{my_company.comp_country}}</h3>
+        <p>{{my_company.comp_description}}</p>
+        <a href="/all_companies/{{my_company.id}}/delete" class="btn btn-danger">delete</a>
+        <a href="/all_companies/{{my_company.id}}/update_company" class="btn btn-success">update</a>
+    </div>
+</div>
+{% endblock %}

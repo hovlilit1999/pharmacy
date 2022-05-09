@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Create Company
+{% endblock %}
+{% block body %}
+<div class="container">
+    <h1>Create drug page</h1>
+    <form method="post">
+        <input type="text" name="drug_name" id="drug_name" class="form-control" placeholder="Insert Drug Name"><br>
+        <input type="text" name="drug_company" id="drug_company" class="form-control" placeholder="Select Company"><br>
+        <textarea name="description" id="description" class="form-control" placeholder="Shortly describe the drug effect"></textarea><br>
+        <input type="submit" class="btn btn-success" value="Create">
+    </form>
+</div>
+{% endblock %}

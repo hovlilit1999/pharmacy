@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Update company page
+{% endblock %}
+{% block body %}
+<div class="container">
+    <h1>Update company page</h1>
+    <form method="post">
+        <input type="text" name="company_name" id="company_name" class="form-control" value={{my_company.comp_name}} placeholder="Insert Company Name"><br>
+        <input type="text" name="company_country" id="company_country" class="form-control" value={{my_company.comp_country}} placeholder="Insert Country"><br>
+        <textarea class="form-control" id="description" name="description" placeholder="Shortly describe the activities of the company"
+                  >{{my_company.comp_description}}</textarea><br>
+        <input type="submit" class="btn btn-success" value="update">
+    </form>
+</div>
+{% endblock %}

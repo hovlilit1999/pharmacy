@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Companies
+{% endblock %}
+{% block body %}
+<div class="container">
+    <h1>All Partner Companies</h1>
+    {% for el in companies %}
+    <div class="alert alert-info">
+        <h3>{{ el.comp_name }}</h3>
+        <a href="/all_companies/{{el.id}}" class="btn btn-warning">More</a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
